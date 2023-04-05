@@ -172,31 +172,6 @@ rem is a root font-size and em is the current font-size*/
   }
 }
 
-/* 576px / 16 = 36em (Mobile) */
-
-@media (max-width: 36em) {
-  .hero {
-    max-width: 120rem;
-  }
-  .heading-primary {
-    font-size: 1.4rem;
-  }
-  /* .hero-description {
-      font-size: 1.6rem;
-    }
-    .cta-btn:link,
-    .cta-btn:visited {
-      display: inline-block;
-  
-      text-decoration: none;
-      font-size: 1.6rem;
-      font-weight: 600;
-      padding: 1.6rem 3.2rem;
-      border-radius: 9px;
-      transition: background-color 0.3s;
-    } */
-}
-
 /*
   SPACING SYSTEM (px)
   2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
