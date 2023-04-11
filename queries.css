@@ -2,174 +2,23 @@
 rem is a root font-size and em is the current font-size*/
 
 /* We will be using em because rem has bugs in some browsers when using media queries */
+
 /* the breakpoint is 1366 so we can take between 1350-1366*/
 
 /* 1350 / 16 = 84,375 we round to 84 */
 
 /* 84 x 16 = 1344 BELOW 1344px (Smaller desktops) */
-@media (max-width: 84em) {
-  .hero {
-    max-width: 120rem;
-  }
-  .heading-primary {
-    font-size: 4.4rem;
-  }
+
+@media screen and (max-width: 36em) {
+  /* CSS styles for screens up to 576px wide wich is mobile phone 576/16 = 36em */
 }
 
-/* 992px / 16 = 62em BELOW 992px (Laptops) */
-
-@media (max-width: 62em) {
-  .hero {
-    max-width: 120rem;
-    margin-left: 1.8rem;
-  }
-  .heading-primary {
-    font-size: 3.2rem;
-  }
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  /* CSS styles for screens between 577px and 768px wide */
 }
 
-/* 768px / 16 = 48em BELOW 768px (Tablets) */
-@media (max-width: 48em) {
-  .hero {
-    max-width: 120rem;
-    margin-left: 1.8rem;
-  }
-  .heading-primary {
-    font-size: 2.4rem;
-  }
-  .hero-description {
-    font-size: 1.6rem;
-  }
-  .cta-btn:link,
-  .cta-btn:visited {
-    display: inline-block;
-
-    text-decoration: none;
-    font-size: 1.6rem;
-    font-weight: 600;
-    padding: 1.6rem 3.2rem;
-    border-radius: 9px;
-    transition: background-color 0.3s;
-  }
-  .about_heading {
-    margin-bottom: 0.8rem;
-    font-size: 1.6rem;
-  }
-  .added_para {
-    font-size: 1.6rem;
-    margin-top: 2rem;
-  }
-  .about_container {
-    display: grid;
-    max-width: 190rem;
-    grid-template-columns: 1fr 1fr 1fr;
-    margin: 4rem 0;
-    gap: 0.1rem;
-    margin: 0 auto;
-  }
-  .grid-item {
-    padding: 0.8rem;
-  }
-  .about_text {
-    margin-top: 2rem;
-    font-size: 1.6rem;
-    line-height: 2rem;
-  }
-  .lst-spacinge {
-    line-height: 2rem;
-  }
-  .section-about {
-    /* background-color: black; */
-    margin-bottom: 1rem;
-  }
-  .icons {
-    margin-top: 2rem;
-  }
-
-  /* RESUME */
-  .resume-heading {
-    font-size: 1.6rem;
-  }
-  .resume-title {
-    font-size: 1.6rem;
-  }
-  .resume-para2 {
-    font-size: 1.6rem;
-  }
-  .resume-container-grid {
-    display: grid;
-    max-width: 130rem;
-    grid-template-columns: 1fr 1fr;
-    gap: 3rem;
-    margin: 0 auto;
-  }
-
-  /* SERVICES SECTION */
-  .service-grid-container {
-    display: grid;
-    max-width: 130rem;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 2rem;
-    margin: 0 auto;
-  }
-  .services-title {
-    font-size: 1.6rem;
-    margin-bottom: 1.6rem;
-    text-align: center;
-  }
-  /* PORTFOLIO SECTION */
-  .portfolio-title {
-    /* margin-left: 20.5rem; */
-    /* margin-top: 5rem; */
-    font-size: 1.6rem;
-    text-align: center;
-  }
-  .news-title {
-    margin: 1.6rem;
-    font-size: 1.6rem;
-    text-align: center;
-  }
-  .news-letter-section {
-    /* background-color: yellow; */
-    padding: 2rem;
-    margin-bottom: 2rem;
-  }
-  /* CONTACT SECTION */
-  .messages {
-    font-size: 1.6rem;
-  }
-  label {
-    font-size: 1.6rem;
-    font-weight: bold;
-    margin-bottom: 0.5rem;
-  }
-  input,
-  textarea {
-    padding: 0.2rem;
-    margin-bottom: 1rem;
-    border: 2px solid #ccc;
-    border-radius: 0.5rem;
-    font-size: 1.6rem;
-  }
-  button {
-    background-color: #4caf50;
-    color: white;
-    padding: 0.5rem 2rem;
-    border: none;
-    border-radius: 0.5rem;
-    font-size: 1.6rem;
-    cursor: pointer;
-  }
-}
-
-/* 769px / 16 = 48em /
-   891px - 901
-  BELOW 768px (Tablets) */
-@media (min-width: 48em) and (max-width: 56em) {
-  .icm {
-    margin: 0.5rem;
-  }
+@media screen and (min-width: 769px) {
+  /* CSS styles for screens wider than 769px */
 }
 
 /*
